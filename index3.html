@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Interface</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="mb-3">
+          <button class="btn btn-primary btn-block">Compose</button>
+          <button class="btn btn-secondary btn-block mt-2">Reply</button>
+        </div>
+        <input type="text" class="form-control mb-2" placeholder="Search">
+        <h5>Folders</h5>
+        <ul class="list-group">
+          <li class="list-group-item">Inbox</li>
+          <li class="list-group-item">Sent</li>
+          <li class="list-group-item">Drafts</li>
+        </ul>
+      </div>
+      <!-- Email List -->
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <h2>Inbox</h2>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">Email 1</a>
+          <a href="#" class="list-group-item list-group-item-action">Email 2</a>
+          <a href="#" class="list-group-item list-group-item-action active">Email 3 (Selected)</a>
+        </div>
+      </div>
+      <!-- Email Display -->
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <h2>Email Details</h2>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Email Subject</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <textarea class="form-control" rows="4" placeholder="Reply..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap JS and dependencies (optional) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

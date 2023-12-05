@@ -1,0 +1,54 @@
+:root{
+    --margin-top: 0px;
+    --margin-top-and-bot:0px;
+    --padding-top-and-bot: 20px;
+    --height-adjust-for-margin-or-padding: calc( var(--margin-top-and-bot) + var(--padding-top-and-bot));
+}
+
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: aquamarine;
+}
+.my-container{
+    height: 100%;
+}
+.my-row{
+   min-height: 100%;
+  
+}
+
+
+.grey-border{
+    border: 1px solid rgb(236, 234, 234);
+    box-sizing: border-box;
+}
+
+.black-border{
+    border: 1px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
+
+.email-list-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.email-list{
+    height: 98vh;
+
+}
+
+.responsive-height-y-scroll{
+
+    background-color: azure;
+    height: 80vh;
+    
+}
+
+
+.write-email-section{
+    height: 400px;
+}
