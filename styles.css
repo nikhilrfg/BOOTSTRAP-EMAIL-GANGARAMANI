@@ -103,7 +103,7 @@
 .email-list-col{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 
 /* .form-control mb{
@@ -133,7 +133,7 @@
     
 }
 
-/* @media (max-width: 575px){
+@media (max-width: 575px){
     .email-list-col{
         height: 30vh;
     }
@@ -144,5 +144,5 @@
         height: 100vh;
     }
 
-} */
+}
 
