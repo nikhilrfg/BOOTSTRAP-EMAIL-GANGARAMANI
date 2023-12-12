@@ -1,0 +1,104 @@
+:root{
+    --bg-color: rgb(191, 191, 191);
+
+
+}
+
+/* body{
+    height: 100vh;
+    background-color: var(--bg-color)
+} */
+
+
+
+.grey-border{
+    border: 1px solid rgb(236, 234, 234);
+    box-sizing: border-box;
+}
+
+.black-border{
+    border: 1px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
+.my-row{
+    min-height: 100%;
+}
+
+.email-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+
+.email-list{
+    height: 98vh;
+
+}
+
+.write-email-section{
+    height:98vh
+}
+
+
+
+
+
+
+/* xs to less than sm breakpoint */
+
+
+/* sm to less than md breakpoint */
+
+/* md to less than lg breakpoint */
+
+/* lg breakpoint and larger */
+@media(992px <= width){
+    .email-list{
+    
+        overflow-y: scroll;
+    }
+    .write-email-section{
+        
+        overflow-y: auto;
+    }
+
+}
+
+@media(768px <= width <992px){
+    .email-list{
+        height: 45vh;
+        overflow-y: scroll;
+    }
+    .write-email-section{
+        height: 54vh;
+        overflow-y: auto;
+    }
+}
+
+
+@media (576px <= width <768px){
+
+    .email-list{
+        height: 45vh;
+        overflow-y: scroll;
+    }
+    .write-email-section{
+        height: 54vh;
+        overflow-y: auto;
+    }
+}
+
+@media( width < 576px){
+    .email-list{
+        height: 85vh;
+    }
+    .write-email-section{
+        height: 85vh;
+    }
+    .email-col{
+        overflow-y: auto;
+    }
+}
